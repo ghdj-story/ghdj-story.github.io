@@ -32,6 +32,7 @@
                 margin:20px;
                 padding:20px;
             }
+           
             #page{
                 background-color: #ecd1ce;
                 margin:auto;
@@ -61,8 +62,16 @@
                 flex: 60%;
                 padding: 20px;
             }
-           
-            
+            #footer{
+                background-color: #dae4e3;
+                font-size: 11px;
+                height: 180px;
+                border-radius: 15px;
+                margin:20px;
+                padding:30px;
+                text-align: center;
+                flex-shrink: 0;
+            }
         </style>
         
     </head>
@@ -71,15 +80,22 @@
         <header id="header">
             <br>
             <!--블로그 제목-->
-            <h1> "<strong>홍준하</strong>"를 소개합니다</h1>
+            <h1> "😃<strong>홍준하</strong>"를 소개합니다</h1>
+            <!--V2: 윈도우의 이모지 기능이 가능하길래 추가해 보았습니다. -->
             <br>
             <!--메뉴 부분!!-->
-            <ul class="nav nav-tabs">
-              <li role="presentation" class="active" ><a href="my_diary.html"> main</a></li>
-              <li role="presentation"><a href="photo.html"> photo</a></li>
-              <li role="presentation"><a href="next.html"> next?</a></li>
-            </ul>
+            <nav id="nav">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active" ><a href="index.html"> main</a></li>
+                    <li role="presentation"><a href="photo.html"> photo</a></li>
+                    <li role="presentation"><a href="next.html"> music</a></li>
+                    <li role="presentation"><a href="https://github.com/ghdj-story"> my github</a></li>
+                    <!--V2: github 연결 메뉴바 추가-->
+                    <!--V2:메뉴 바에서 해당 페이지의 메뉴 바의 색깔이 변하는 활성화를 시켰습니다.-->
+                </ul>
+            </nav>
         </header>
+        
         <br>
         <div id="page">
             <!--좋아하는 캐릭터 짱구 사진입니다!-->
@@ -94,10 +110,15 @@
                 <br>
             </article>
         </div>
-       
         <br>
+        <div>
+            <footer id="footer">
+            <p style="color:darkslategray">made by <strong>홍준하</strong><br>email:sarah001015@naver.com</p>
+            </footer>
+            <!--V2:footer 추가>
+            <!-V2:footer좌우 크기를 위의 박스들과 같은 크기로 맞추고 싶은데 방법을 몰라서 일단은 여기까지 했습니다 ㅠㅠ-->
         
-          
-    </div>
+        </div> 
+        </div>
     </body>
 </html>
